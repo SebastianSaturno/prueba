@@ -1,0 +1,290 @@
+body {
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #232526 60%, #0f2027 100%);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.neon {
+    color: #00fff7;
+    text-shadow: 0 0 8px #00fff7, 0 0 24px #00fff7, 0 0 40px #00fff7;
+    font-family: 'Orbitron', sans-serif;
+}
+.hero-img {
+    width: 320px;
+    max-width: 90vw;
+    filter: drop-shadow(0 0 40px #00fff7cc);
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+}
+.cta-btn {
+    background: linear-gradient(90deg, #00fff7 0%, #ff00cc 100%);
+    color: #181c24;
+    border: none;
+    border-radius: 40px;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 16px #00fff7cc;
+    margin-top: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 32px #ff00cc99;
+}
+section {
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.benefit {
+    background: rgba(24,28,36,0.85);
+    border: 1.5px solid #00fff7;
+    border-radius: 18px;
+    padding: 2rem 1.5rem;
+    min-width: 220px;
+    max-width: 300px;
+    flex: 1 1 220px;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 16px #00fff766;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.benefit:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 32px #00fff7cc;
+}
+.benefit i {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+    color: #ff00cc;
+    text-shadow: 0 0 8px #ff00cc99;
+}
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.testimonial {
+    background: rgba(24,28,36,0.85);
+    border-left: 4px solid #ff00cc;
+    border-radius: 12px;
+    padding: 1.5rem 1.2rem;
+    max-width: 340px;
+    min-width: 220px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 12px #ff00cc66;
+    font-style: italic;
+    position: relative;
+}
+.testimonial .user {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.testimonial .user img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    border: 2px solid #00fff7;
+}
+.testimonial .user span {
+    font-weight: bold;
+    color: #00fff7;
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(24,28,36,0.85);
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 2rem;
+    box-shadow: 0 0 16px #00fff766;
+}
+.comparison-table th, .comparison-table td {
+    padding: 1rem 0.7rem;
+    text-align: center;
+}
+.comparison-table th {
+    background: #181c24;
+    color: #00fff7;
+    font-family: 'Orbitron', sans-serif;
+}
+.comparison-table tr:nth-child(even) {
+    background: #232526;
+}
+.comparison-table tr:nth-child(odd) {
+    background: #181c24;
+}
+.comparison-table .highlight {
+    color: #ff00cc;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff00cc99;
+}
+.offer-section {
+    background: linear-gradient(90deg, #181c24 60%, #ff00cc22 100%);
+    border-radius: 18px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    box-shadow: 0 0 24px #ff00cc44;
+    position: relative;
+}
+.offer-section .timer {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #00fff7;
+    margin: 1rem 0 0.5rem 0;
+    text-shadow: 0 0 12px #00fff7cc;
+}
+.offer-section .offer-msg {
+    color: #ff00cc;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.form-section {
+    background: rgba(24,28,36,0.85);
+    border-radius: 18px;
+    padding: 2.5rem 1.5rem;
+    max-width: 420px;
+    margin: 2rem auto 0 auto;
+    box-shadow: 0 0 24px #00fff744;
+}
+.form-section h3 {
+    color: #00fff7;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 1.2rem;
+}
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.form-section input, .form-section button {
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+.form-section input {
+    background: #181c24;
+    color: #fff;
+    border: 1.5px solid #00fff7;
+    transition: border 0.2s;
+}
+.form-section input:focus {
+    border: 1.5px solid #ff00cc;
+    outline: none;
+}
+.form-section button {
+    background: linear-gradient(90deg, #00fff7 0%, #ff00cc 100%);
+    color: #181c24;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 12px #00fff7cc;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.form-section button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 24px #ff00cc99;
+}
+@media (max-width: 900px) {
+    .benefits, .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comparison-table th, .comparison-table td {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.3rem;
+    }
+}
+@media (max-width: 600px) {
+    header.hero {
+        min-height: 80vh;
+        padding-top: 2rem;
+    }
+    .hero-img {
+        width: 90vw;
+    }
+    section {
+        padding: 2.5rem 0.5rem 1.5rem 0.5rem;
+    }
+    .form-section {
+        padding: 1.5rem 0.5rem;
+    }
+}
+
+/* Efectos de brillo y neón adicionales */
+.benefit, .testimonial, .form-section, .offer-section, .comparison-table {
+    backdrop-filter: blur(2px);
+}
+
+.cta-btn:active {
+    filter: brightness(1.2);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animación de entrada para secciones */
+section, .offer-section, .form-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
+}
+section.visible, .offer-section.visible, .form-section.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Iconos animados */
+.benefit i {
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+}
+.benefit:hover i {
+    color: #00fff7;
+    text-shadow: 0 0 16px #00fff7cc;
+    transform: scale(1.2) rotate(-8deg);
+}
+
+/* Responsive extra */
+@media (max-width: 400px) {
+    .form-section, .offer-section {
+        padding: 1rem 0.2rem;
+    }
+    .benefit {
+        padding: 1.2rem 0.5rem;
+    }
+}

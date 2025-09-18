@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auriculares Gaming Pro | Domina el juego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <nav style="position:absolute;top:24px;right:32px;z-index:10;">
+            <a href="about.html" style="color:#00fff7;font-family:'Orbitron',sans-serif;font-weight:bold;text-decoration:none;font-size:1.1rem;padding:0.5rem 1.2rem;border-radius:24px;background:rgba(24,28,36,0.7);box-shadow:0 0 8px #00fff7cc;transition:background 0.2s;">Sobre mí</a>
+        </nav>
+        <img class="hero-img" src="imagenes/auriculares.png" alt="Auriculares Gaming Pro">
+        <h1 class="neon">Domina el juego con sonido de otro nivel</h1>
+        <p style="font-size:1.3rem; margin:1rem 0 0.5rem 0;">Auriculares Bluetooth de alta gama para gamers exigentes</p>
+        <button class="cta-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">¡Obtén un 20% de descuento!</button>
+    </header>
+
+    <section>
+        <h2 class="neon" style="font-size:2rem;">¿Por qué elegir nuestros auriculares?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Latencia ultra baja</h3>
+                <p>Reacciona en tiempo real sin retrasos. Ideal para eSports y shooters.</p>
+            </div>
+            <div class="benefit">
+                <i class="fa-solid fa-headphones"></i>
+                <h3>Sonido envolvente 7.1</h3>
+                <p>Sumérgete en el juego con audio 360° y máxima precisión espacial.</p>
+            </div>
+            <div class="benefit">
+                <i class="fa-solid fa-microphone-slash"></i>
+                <h3>Micrófono con cancelación de ruido</h3>
+                <p>Comunicación nítida, sin distracciones externas.</p>
+            </div>
+            <div class="benefit">
+                <i class="fa-solid fa-battery-full"></i>
+                <h3>Batería de larga duración</h3>
+                <p>Hasta 30 horas de juego continuo con carga rápida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="neon" style="font-size:2rem;">Gamers e influencers opinan</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                “El sonido envolvente es brutal, escucho cada paso en el juego. ¡Recomendadísimos!”
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Gamer 1">
+                    <span>@DarkWolf</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                “Probé varias marcas y estos auriculares tienen la mejor relación calidad-precio.”
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Gamer 2">
+                    <span>@LunaGamer</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                “La cancelación de ruido del micro es top. Mis streams suenan pro.”
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Influencer">
+                    <span>@ProStreamer</span>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:1.5rem;">
+            <span style="color:#ff00cc; font-size:1.1rem;">Puntuación en medios: </span>
+            <span style="color:#00fff7; font-size:1.3rem; font-family:'Orbitron',sans-serif;">9.7/10</span>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="neon" style="font-size:2rem;">Comparativa con otras marcas</h2>
+        <div style="overflow-x:auto;">
+        <table class="comparison-table">
+            <tr>
+                <th></th>
+                <th>Gaming Pro</th>
+                <th>Marca SONY</th>
+                <th>Marca JBL</th>
+            </tr>
+            <tr>
+                <td>Latencia</td>
+                <td class="highlight">Ultra baja</td>
+                <td>Media</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Sonido 7.1</td>
+                <td class="highlight">Sí</td>
+                <td>No</td>
+                <td>Opcional</td>
+            </tr>
+            <tr>
+                <td>Cancelación de ruido</td>
+                <td class="highlight">Avanzada</td>
+                <td>Básica</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Batería</td>
+                <td class="highlight">30h</td>
+                <td>18h</td>
+                <td>20h</td>
+            </tr>
+            <tr>
+                <td>Precio</td>
+                <td class="highlight">$99</td>
+                <td>$120</td>
+                <td>$110</td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <section class="offer-section">
+        <div class="offer-msg">¡Oferta válida por tiempo limitado!</div>
+        <div class="timer" id="timer">00:15:00</div>
+        <button class="cta-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">¡Cómpralos ahora!</button>
+    </section>
+
+    <section class="form-section" id="form">
+        <h3>Reserva los tuyos y recibe un 20% de descuento</h3>
+        <form onsubmit="event.preventDefault(); document.getElementById('form-msg').style.display='block';">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <button type="submit">¡Quiero mi descuento!</button>
+        </form>
+        <div id="form-msg" style="display:none; color:#00fff7; margin-top:1rem; font-weight:bold;">¡Gracias! Te contactaremos pronto con tu descuento exclusivo.</div>
+    </section>
+
+    <section class="payment-section" style="text-align:center; margin:2.5rem 0 1.5rem 0;">
+        <h3 class="neon" style="font-size:1.4rem; margin-bottom:1.2rem;">Métodos de pago aceptados</h3>
+        <div style="display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;align-items:center;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <i class="fa-brands fa-cc-visa" style="font-size:2.5rem;color:#00fff7;"></i>
+                <span style="margin-top:0.3rem;font-size:1rem;">Visa</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <i class="fa-brands fa-cc-mastercard" style="font-size:2.5rem;color:#ff00cc;"></i>
+                <span style="margin-top:0.3rem;font-size:1rem;">Mastercard</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <i class="fa-brands fa-cc-amex" style="font-size:2.5rem;color:#00bfff;"></i>
+                <span style="margin-top:0.3rem;font-size:1rem;">Amex</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <i class="fa-brands fa-cc-paypal" style="font-size:2.5rem;color:#ffc439;"></i>
+                <span style="margin-top:0.3rem;font-size:1rem;">PayPal</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <i class="fa-solid fa-building-columns" style="font-size:2.5rem;color:#fff;"></i>
+                <span style="margin-top:0.3rem;font-size:1rem;">Transferencia</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <i class="fa-brands fa-bitcoin" style="font-size:2.5rem;color:#f7931a;"></i>
+                <span style="margin-top:0.3rem;font-size:1rem;">Cripto</span>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align:center; color:#888; margin:2rem 0 1rem 0; font-size:0.95rem;">
+        &copy; 2025 Gaming Pro. Todos los derechos reservados.
+    </footer>
+
+    <!-- Font Awesome para íconos -->
+    <script src="https://kit.fontawesome.com/6e2e5e2e2e.js" crossorigin="anonymous"></script>
+</body>
+</html>
